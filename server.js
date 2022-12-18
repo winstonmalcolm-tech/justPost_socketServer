@@ -16,10 +16,10 @@ const io = new Server(server, {
 });
 
 io.on('connection', (socket) => {
-    //console.log(`a user connected ${socket.id}`)
+    console.log(`a user connected ${socket.id}`)
 
     socket.on("send_comment", (data) => {
-        //console.log(data)
+        console.log(data)
         socket.broadcast.emit("receive_comment", data)
     });
 });
