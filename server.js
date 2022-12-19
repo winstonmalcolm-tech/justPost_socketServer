@@ -10,7 +10,7 @@ app.use(cors());
 
 const io = new Server(server, {
     cors: {
-        origin: "https://justpost2.000webhostapp.com/",
+        origin: "http://justpost2.000webhostapp.com/",
         methods: ['GET', 'POST']
     }
 });
