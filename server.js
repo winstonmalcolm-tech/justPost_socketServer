@@ -10,7 +10,7 @@ app.use(cors());
 
 const io = new Server(server, {
     cors: {
-        origin: "http://justpost.great-site.net",
+        origin: "*",
         methods: ['GET', 'POST']
     }
 });
